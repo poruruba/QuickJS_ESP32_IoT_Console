@@ -41,7 +41,7 @@ var vue_options = {
                 await this.port.close();
                 this.port = null;
             }
-            this.connected = false;
+            this.serial_connected = false;
         },
         data_process: function(value){
             this.serial_console += decoder.decode(value);
